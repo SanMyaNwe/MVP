@@ -11,6 +11,12 @@
 		3C3165CE24C33FA700C03592 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3165CA24C33FA700C03592 /* Api.swift */; };
 		3C3165CF24C33FA700C03592 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3165CB24C33FA700C03592 /* EndPoint.swift */; };
 		3C3165D024C33FA700C03592 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3165CC24C33FA700C03592 /* ApiService.swift */; };
+		3C3165D224C3416A00C03592 /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3165D124C3416A00C03592 /* MovieListResponse.swift */; };
+		3C3165D524C3419B00C03592 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3165D424C3419B00C03592 /* Movie.swift */; };
+		3C3165D724C341C400C03592 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3165D624C341C400C03592 /* HomeView.swift */; };
+		3C3165DA24C341E100C03592 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3165D924C341E100C03592 /* HomeViewController.swift */; };
+		3C3165DC24C3425A00C03592 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3165DB24C3425A00C03592 /* HomePresenter.swift */; };
+		3C3165DE24C3429800C03592 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3165DD24C3429800C03592 /* MovieModel.swift */; };
 		3C889AD624A73C7100477164 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C889AD524A73C7100477164 /* AppDelegate.swift */; };
 		3C889ADD24A73C7100477164 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C889ADB24A73C7100477164 /* Main.storyboard */; };
 		3C889ADF24A73C7500477164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C889ADE24A73C7500477164 /* Assets.xcassets */; };
@@ -22,6 +28,12 @@
 		3C3165CA24C33FA700C03592 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		3C3165CB24C33FA700C03592 /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		3C3165CC24C33FA700C03592 /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		3C3165D124C3416A00C03592 /* MovieListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
+		3C3165D424C3419B00C03592 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		3C3165D624C341C400C03592 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3C3165D924C341E100C03592 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3C3165DB24C3425A00C03592 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		3C3165DD24C3429800C03592 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		3C889AD224A73C7000477164 /* MVP_Module.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP_Module.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C889AD524A73C7100477164 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C889ADC24A73C7100477164 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +93,7 @@
 		3C3165C224C33F2B00C03592 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				3C3165DB24C3425A00C03592 /* HomePresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -88,6 +101,7 @@
 		3C3165C324C33F3600C03592 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3C3165D624C341C400C03592 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +109,7 @@
 		3C3165C424C33F3B00C03592 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3C3165DD24C3429800C03592 /* MovieModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,8 +138,25 @@
 		3C3165C824C33F6800C03592 /* Responses */ = {
 			isa = PBXGroup;
 			children = (
+				3C3165D124C3416A00C03592 /* MovieListResponse.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		3C3165D324C3418C00C03592 /* VOs */ = {
+			isa = PBXGroup;
+			children = (
+				3C3165D424C3419B00C03592 /* Movie.swift */,
+			);
+			path = VOs;
+			sourceTree = "<group>";
+		};
+		3C3165D824C341CD00C03592 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C3165D924C341E100C03592 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		3C889AC924A73C7000477164 = {
@@ -150,11 +182,13 @@
 				3C3165C624C33F4F00C03592 /* Utils */,
 				3C3165C724C33F5400C03592 /* Extensions */,
 				3C3165C524C33F4900C03592 /* Components */,
+				3C3165D324C3418C00C03592 /* VOs */,
 				3C3165C824C33F6800C03592 /* Responses */,
 				3C3165C124C33F2200C03592 /* ApiService */,
 				3C3165C424C33F3B00C03592 /* Models */,
 				3C3165C324C33F3600C03592 /* Views */,
 				3C3165C224C33F2B00C03592 /* Presenters */,
+				3C3165D824C341CD00C03592 /* ViewControllers */,
 				3C3165BF24C33F1300C03592 /* Storyboards */,
 				3C3165C024C33F1A00C03592 /* Resources */,
 			);
@@ -232,9 +266,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C3165DE24C3429800C03592 /* MovieModel.swift in Sources */,
+				3C3165D524C3419B00C03592 /* Movie.swift in Sources */,
 				3C3165CE24C33FA700C03592 /* Api.swift in Sources */,
+				3C3165D224C3416A00C03592 /* MovieListResponse.swift in Sources */,
+				3C3165DC24C3425A00C03592 /* HomePresenter.swift in Sources */,
 				3C3165D024C33FA700C03592 /* ApiService.swift in Sources */,
 				3C889AD624A73C7100477164 /* AppDelegate.swift in Sources */,
+				3C3165DA24C341E100C03592 /* HomeViewController.swift in Sources */,
+				3C3165D724C341C400C03592 /* HomeView.swift in Sources */,
 				3C3165CF24C33FA700C03592 /* EndPoint.swift in Sources */,
 				3C3165CD24C33FA700C03592 /* ApiServiceError.swift in Sources */,
 			);
